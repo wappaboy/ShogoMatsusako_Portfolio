@@ -1,0 +1,89 @@
+/* ヘッダー */
+div#header {
+ position: fixed; /* 画面をスクロールしてもヘッダーを常に上部固定 */
+ width: 100%; /* 横幅を画面一杯に設定 */
+ height: 70px; /* ヘッダーの高さを設定 */
+ background: black; /* 背景色の設定 */
+
+}
+
+div#headerArea {
+ margin: 0 auto; /* 横幅をautoにすることでコンテンツが中央寄りに設定 */
+ width: 980px; /* ヘッダーコンテンツ部分の横幅を設定 */
+}
+
+/* ヘッダーロゴ */
+div#header_logo {
+ float: left; /* ロゴ表示部分を左寄せで設定 */
+ padding: 12px 0 0 0; /* ロゴ表示部分の上に余白12ピクセルを設定 */
+ font-weight: bold; /* ロゴのテキストを太字に設定 */
+ color: #777777; /* ロゴの色を設定 */
+}
+
+/* グローバルナビゲーション */
+div#gnavi {
+ float: right; /* グローバルナビゲーション部分を右寄せで設定 */
+ margin: 12px 0 0 0; /* 上部に12ピクセルの余白を設定 */
+ text-align: right; /* コンテンツの中身を右寄せで設定 */
+}
+
+div#gnavi ul{
+ clear: both; /* 回り込みを解除する際に使用しdiv要素が重ならないように設定 */
+}
+
+div#gnavi li {
+ padding: 0 0 0 20px; /* 左に20ピクセルの余白を設定 */
+ float: left; /* リストを左寄せで横並びになるよう設定 */
+}
+
+/* リンク */
+a:link {
+ color: #006DD9; /* リンクテキストを青色に設定 */
+ text-decoration: none; /* テキストに下線が表示されないように設定 */
+}
+
+a:hover {  /* hoverはマウスを乗せたときの設定 */
+ color: #cd4730; /* リンクテキストを赤色に設定 */
+ text-decoration: underline; /* テキストに下線が表示されないように設定 */
+}
+
+h1{
+ margin-bottom: 10px;  /* h1の下に10pxの余白を設定 */
+ font-size: 182%; /* フォントサイズを元サイズの182%で表示 */
+ font-weight: bold; /* 太字 */
+ line-height: 2.0em; /* 上下に半行余白の段落の高さを設定 */
+ color: #FFF; /* フォントの色を白に設定 */
+}
+
+div#container{
+margin: 0 auto;
+background-color: #ddd;
+width:960px;
+}
+
+div#main{
+float:left;
+background-color: red;
+width:700px;
+height:400px;
+}
+
+div#sidebar{
+float:right;
+background-color: yellow;
+width:260px;
+height:300px;
+}
+
+div#under{
+clear:both;
+width:960px;
+background-color: green;
+height:250px;
+}
+
+div#footer{
+width: 100%;
+height: 70px;
+background: black;
+}
