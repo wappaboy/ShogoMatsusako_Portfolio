@@ -22,7 +22,7 @@ div#header_logo {
 
 /* グローバルナビゲーション */
 div#gnavi {
- float: right; /* グローバルナビゲーション部分を右寄せで設定 */
+ float: left; /* グローバルナビゲーション部分を右寄せで設定 */
  margin: 12px 0 0 0; /* 上部に12ピクセルの余白を設定 */
  text-align: right; /* コンテンツの中身を右寄せで設定 */
 }
@@ -44,15 +44,7 @@ a:link {
 
 a:hover {  /* hoverはマウスを乗せたときの設定 */
  color: #cd4730; /* リンクテキストを赤色に設定 */
- text-decoration: underline; /* テキストに下線が表示されないように設定 */
-}
-
-h1{
- margin-bottom: 10px;  /* h1の下に10pxの余白を設定 */
- font-size: 182%; /* フォントサイズを元サイズの182%で表示 */
- font-weight: bold; /* 太字 */
- line-height: 2.0em; /* 上下に半行余白の段落の高さを設定 */
- color: #FFF; /* フォントの色を白に設定 */
+ text-decoration: underline; /* テキストに下線が表示されるように設定 */
 }
 
 div#container{
@@ -62,10 +54,11 @@ width:960px;
 }
 
 div#main{
+padding: 50px 0 0 0;
 float:left;
-background-color: red;
+background-color: white;
 width:700px;
-height:400px;
+height:2500px;
 }
 
 div#sidebar{
