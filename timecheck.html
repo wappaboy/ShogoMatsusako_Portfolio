@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>時刻範囲チェック</title>
+
+<script type="text/javascript">
+<!--
+function check(){
+
+  //入力内容を変数に代入
+  var int1=document.timecheck.time.value;
+  var int2=document.timecheck.range1.value;
+  var int3=document.timecheck.range2.value;
+  var ans;
+
+	// 入力内容を判定
+	if(int2 <= int3){
+		if(int2 <= int1 && int1 < int3){
+      ans="〇 指定範囲内です。"
+    }
+    else{
+      ans="× 指定範囲外です。"
+    }
+	}
+
+  if(int2 >= int3){
+    if(int2 <= int1){
+      ans="〇 指定範囲内です。"
+    }
+    else if(int1 < int3){
+      ans="〇 指定範囲内です。"
+    }
+    else{
+      ans="× 指定範囲外です。"
+    }
+	}
+
+  // 入力が正しいか判定
+  if(int1 < 0 || int1 >= 24){
+    ans="【注意】0時～23時の時刻を入力してください。"
+  }
+  if(int2 < 0 || int2 >= 24){
+    ans="【注意】0時～23時の時刻を入力してください。"
+  }
+  if(int3 < 0 || int3 >= 24){
+    ans="【注意】0時～23時の時刻を入力してください。"
+  }
+
+	// 結果ダイアログを表示
+		window.alert(ans);
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2>モバイルファクトリー　エンジニア職　エントリーシート</h2>
+<h3>プログラミング課題</h3>
+
+<form name="timecheck">
+  調べたい時刻：<input type="number" name="time" value="">時<br>
+  指定する時間の範囲:<input type="number" name="range1" value="">時～<input type="number" name="range2" value="">時<br>
+
+<p><input type="button" value="決定" onClick="check()"></p>
+
+</body>
+</html>
