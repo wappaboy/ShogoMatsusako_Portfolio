@@ -1,5 +1,68 @@
+@charset "utf-8";
+
+html,body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-style:normal;
+  font-weight: normal;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+ol, ul{
+    list-style:none;
+}
+
+body {
+  font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  color: #666666;
+  font-size: 93%;
+}
+
+/* 見出し */
+h1 {
+position: relative;
+color: #158b2b;
+font-size: 35px;
+padding: 10px 0;
+text-align: center;
+margin: 1.5em 0;
+}
+h1:before {
+content: "";
+position: absolute;
+top: -5px;
+left: 50%;
+width: 150px;
+height: 70px;
+border-radius: 50%;
+border: 5px solid #a6ddb0;
+border-left-color: transparent;
+border-right-color: transparent;
+-moz-transform: translateX(-50%);
+-webkit-transform: translateX(-50%);
+-ms-transform: translateX(-50%);
+transform: translateX(-50%);
+}
+
+h2 {
+padding: 0 0 0 0.5em;/*文字周りの余白*/
+color: #666666;/*文字色*/
+background: #fffaf4;/*背景色*/
+border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
+font-size: 35px;
+}
+
+h3 {
+display :inline-block;
+background: linear-gradient(transparent 85%, #a6ddb0 85%);
+font-size: 20px;
+}
+
 /* ヘッダー */
 div#header {
+ z-index: 5;
  position: fixed; /* 画面をスクロールしてもヘッダーを常に上部固定 */
  width: 100%; /* 横幅を画面一杯に設定 */
  height: 70px; /* ヘッダーの高さを設定 */
@@ -17,7 +80,7 @@ div#header_logo {
  float: left; /* ロゴ表示部分を左寄せで設定 */
  padding: 12px 0 0 0; /* ロゴ表示部分の上に余白12ピクセルを設定 */
  font-weight: bold; /* ロゴのテキストを太字に設定 */
- color: #777777; /* ロゴの色を設定 */
+ color: #888888; /* ロゴの色を設定 */
 }
 
 /* グローバルナビゲーション */
