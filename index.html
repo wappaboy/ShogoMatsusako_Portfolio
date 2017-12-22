@@ -2,49 +2,54 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Shogo Matsusako's Portfolio</title>
+
+  <!-- BootstrapのCSS読み込み -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- jQuery読み込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- BootstrapのJS読み込み -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <link href="css/style.css" rel="stylesheet">
+  <!-- font-awesome読み込み -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
 
   <!-- ヘッダーここから -->
   <div id="header">
-  <div id="headerArea">
+    <div id="headerArea">
+      <div id="header_logo">Shogo Matsusako's Portfolio</div>
 
-    <div id="header_logo">Shogo Matsusako's Portfolio</div>
+      <!-- グローバルナビゲーションここから -->
+      <div id="gnavi">
+        <ul>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="productions.html">Productions</a></li>
+          <li><a href="movies.html">Movies</a></li>
+        </ul>
+      </div>
+      <!-- グローバルナビゲーションここまで -->
 
-    <!-- グローバルナビゲーションここから -->
-    <div id="gnavi">
-      <ul>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="productions.html">Productions</a></li>
-        <li><a href="movies.html">Movies</a></li>
-      </ul>
     </div>
-    <!-- グローバルナビゲーションここまで -->
-
-  </div>
   </div>
   <!-- ヘッダーここまで -->
-
-  <!-- ここからコンテナ部分（メインコンテンツ＋サイドバー） -->
-  <div id="container">
-    <!-- メインコンテンここから -->
+  <div class="container">
+    <!-- メインコンテンツここから -->
     <div id="main">
-     <p><input type="button" value="プログラミング課題" onClick="window.open('timecheck.html')"></p>
+      <p><input type="button" value="プログラミング課題" onClick="window.open('timecheck.html')"></p>
     </div>
     <!-- メインコンテンツここまで -->
-
   </div>
-  <!-- コンテナここまで -->
-
-  <!-- フッターここから -->
-  <div id="footer">
-    <div id="footerArea">
-      <p class="text-muted">© 2017 ShogoMatsusako</p>
+    <!-- フッターここから -->
+    <div id="footer">
+      <div id="footerArea">
+        <p class="text-muted">© 2017 ShogoMatsusako</p>
+      </div>
     </div>
-  </div>
-  <!-- フッターここまで-->
-
+    <!-- フッターここまで-->
 </body>
 </html>
