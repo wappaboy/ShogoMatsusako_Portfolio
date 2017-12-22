@@ -4,6 +4,7 @@ html,body{
   margin: 0;
   padding: 0;
   border: 0;
+  height: 100%
   font-style:normal;
   font-weight: normal;
   font-size: 100%;
@@ -113,15 +114,15 @@ a:hover {  /* hoverはマウスを乗せたときの設定 */
 div#container{
 margin: 0 auto;
 background-color: #ddd;
-width:960px;
+width:100%;
+padding-bottom: 70px;
 }
 
 div#main{
 padding: 80px 0 0 0;
 float:left;
 background-color: white;
-width:700px;
-height:3500px;
+width: 0 auto;
 }
 
 div#sidebar{

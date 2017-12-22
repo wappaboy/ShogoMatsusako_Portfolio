@@ -1,95 +1,106 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <title>Shogo Matsusako's Portfolio</title>
-  <link href="css/style.css" rel="stylesheet">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shogo Matsusako's Portfolio</title>
 
-  <!-- ヘッダーここから -->
-  <div id="header">
-  <div id="headerArea">
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
 
-    <div id="header_logo">Shogo Matsusako's Portfolio</div>
+    <link href="css/style.css" rel="stylesheet">
+    <!-- font-awesome読み込み -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  </head>
 
-    <!-- グローバルナビゲーションここから -->
-    <div id="gnavi">
-      <ul>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="productions.html">Productions</a></li>
-        <li><a href="movies.html">Movies</a></li>
-      </ul>
+  <body>
+    <div class="container">
+
+    <!-- ヘッダーここから -->
+    <div id="header">
+    <div id="headerArea">
+
+      <div id="header_logo">Shogo Matsusako's Portfolio</div>
+
+      <!-- グローバルナビゲーションここから -->
+      <div id="gnavi">
+        <ul>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="productions.html">Productions</a></li>
+          <li><a href="movies.html">Movies</a></li>
+        </ul>
+      </div>
+      <!-- グローバルナビゲーションここまで -->
+
     </div>
-    <!-- グローバルナビゲーションここまで -->
-
-  </div>
-  </div>
-  <!-- ヘッダーここまで -->
-
-  <!-- ここからコンテナ部分（メインコンテンツ＋サイドバー） -->
-  <div id="container">
-    <!-- メインコンテンここから -->
-    <div id="main">
-      <h1>Productions</h1>
-      <h2>VR</h2>
-      <h3>ノギハロ！</h3>
-      <p><img src="imgs/nogihello_logo.png" width="288"height="288"></p>
-      <p>＜時期＞2016年5月,2016年11月</p>
-      <p>＜担当＞企画代表・製作</p>
-      <p>＜企画概要＞</p>
-      <p>東大ハロプロ研究会と東京大学乃木坂46同好会のコラボ団体として結成し、文化祭で無料展示した。「アイドル×VR」をメインコンセプトに、オリジナルVRコンテンツを作成した。<br>
-        2016年5月の五月祭では現役東大生によるコピーダンスグループ「東大Honeypot」をRichoTHETASで撮影した360度動画の視聴体験を展示。また、実際のアイドルのMVを複数三次元空間に並べて視聴する体験を3DCGソフトBlenderで制作し、GearVR用に書き出し展示した。<br>
-        2016年11月の駒場祭では、体験者がボタン選択できるインタラクティブなVR体験を目指し、Unityでのアプリケーション制作を開始した。「モーニング娘。」「℃-ute」「乃木坂46」の歴代の全PVが見られる「四次元☆アイドル図鑑」と、東大Honeypot(Z)の実際のライブ映像を360度動画として楽しめる「四次元☆東大Honeypot(Z) -LIVE-」を制作し展示した。</p>
-      <p><input type="button" value="ノギハロ！Webサイト" onClick="window.open('https://nogihello.themedia.jp/')"></p>
-
-      <h3>足湯VR</h3>
-      <p><img src="imgs/nogihello_logo.png" width="288"height="288"></p>
-      <p>＜時期＞2017年5月</p>
-      <p>＜担当＞VRコンテンツ制作リーダー</p>
-      <p>＜企画概要＞</p>
-      <p>東大VRサークル UT-virtualと東大温泉サークル OKR（おける）のコラボ企画として展示。来場者には長野県の渋温泉の源泉足湯につかりながら、現地の様々な風景をVR機器で楽しむという体験をしてもらった。<br>
-        開発に伴い、長野県の渋温泉現地でGear360を使用して全天球動画を撮影。来場者が好きなコンテンツを選べるよう、Unityでメニュー画面やインタラクティブな体験のシーンを作成し、GearVRで見られるように書き出した。</p>
-      <p><input type="button" value="取材記事【VR×温泉　東大温泉サークルOKRのVR足湯が大人気！】" onClick="window.open('http://yutty.jp/archives/okr-vr-onsen/')"></p>
-      <p>by Yutty! 温泉に行きたくなるメディア</p>
-
-      <h2>演劇</h2>
-      <h3>劇場版仮面ファイター ～コントロール・オブ・マインド～</h3>
-      <p><img src="imgs/com_logo.jpg" width="512"height="288"></p>
-      <p>＜担当＞監督・脚本・演出</p>
-      <p>＜開演日＞2015年11月22日</p>
-      <p>＜企画概要＞</p>
-      <p>東大エンターテインメント団体 躰平楽（たいへいらく）の駒場祭文三劇場企画第一弾。
-      <p><input type="button" value="躰平楽オフィシャルサイト" onClick="window.open('http://taiheiraku.online/')"></p>
-
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/OZHKJFLdLs4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-
-      <h3>傲慢ボーイはきっと死ぬ</h3>
-      <p><img src="imgs/gomanboy_logo.png" width="512"height="288"></p
-      <p>＜担当＞監督・脚本・演出</p>
-      <p>＜開演日＞2017年11月24日,25日</p>
-      <p>＜企画概要＞</p>
-      <p><input type="button" value="躰平楽オフィシャルサイト" onClick="window.open('http://taiheiraku.online/')"></p>
-
-     <p></p>
     </div>
-    <!-- メインコンテンツここまで -->
+    <!-- ヘッダーここまで -->
 
-    <!-- サイト下部コンテンツここから-->
-    <div id="under">
-      <p></p>
+      <!-- メインコンテンここから -->
+      <div id="main">
+        <h1>Productions</h1>
+        <h2>VR</h2>
+        <h3>ノギハロ！</h3>
+        <p><img src="imgs/nogihello_logo.png" width="288"height="288"></p>
+        <p>＜時期＞2016年5月,2016年11月</p>
+        <p>＜担当＞企画代表・製作</p>
+        <p>＜企画概要＞</p>
+        <p>東大ハロプロ研究会と東京大学乃木坂46同好会のコラボ団体として結成し、文化祭で無料展示した。「アイドル×VR」をメインコンセプトに、オリジナルVRコンテンツを作成した。<br>
+          2016年5月の五月祭では現役東大生によるコピーダンスグループ「東大Honeypot」をRichoTHETASで撮影した360度動画の視聴体験を展示。また、実際のアイドルのMVを複数三次元空間に並べて視聴する体験を3DCGソフトBlenderで制作し、GearVR用に書き出し展示した。<br>
+          2016年11月の駒場祭では、体験者がボタン選択できるインタラクティブなVR体験を目指し、Unityでのアプリケーション制作を開始した。「モーニング娘。」「℃-ute」「乃木坂46」の歴代の全PVが見られる「四次元☆アイドル図鑑」と、東大Honeypot(Z)の実際のライブ映像を360度動画として楽しめる「四次元☆東大Honeypot(Z) -LIVE-」を制作し展示した。</p>
+        <p><input type="button" value="ノギハロ！Webサイト" onClick="window.open('https://nogihello.themedia.jp/')"></p>
+
+        <h3>足湯VR</h3>
+        <p><img src="imgs/nogihello_logo.png" width="288"height="288"></p>
+        <p>＜時期＞2017年5月</p>
+        <p>＜担当＞VRコンテンツ制作リーダー</p>
+        <p>＜企画概要＞</p>
+        <p>東大VRサークル UT-virtualと東大温泉サークル OKR（おける）のコラボ企画として展示。来場者には長野県の渋温泉の源泉足湯につかりながら、現地の様々な風景をVR機器で楽しむという体験をしてもらった。<br>
+          開発に伴い、長野県の渋温泉現地でGear360を使用して全天球動画を撮影。来場者が好きなコンテンツを選べるよう、Unityでメニュー画面やインタラクティブな体験のシーンを作成し、GearVRで見られるように書き出した。</p>
+        <p><input type="button" value="取材記事【VR×温泉　東大温泉サークルOKRのVR足湯が大人気！】" onClick="window.open('http://yutty.jp/archives/okr-vr-onsen/')"></p>
+        <p>by Yutty! 温泉に行きたくなるメディア</p>
+
+        <h2>演劇</h2>
+        <h3>劇場版仮面ファイター ～コントロール・オブ・マインド～</h3>
+        <p><img src="imgs/com_logo.jpg" width="512"height="288"></p>
+        <p>＜担当＞監督・脚本・演出</p>
+        <p>＜開演日＞2015年11月22日</p>
+        <p>＜企画概要＞</p>
+        <p>東大エンターテインメント団体 躰平楽（たいへいらく）の駒場祭文三劇場企画第一弾。
+        <p><input type="button" value="躰平楽オフィシャルサイト" onClick="window.open('http://taiheiraku.online/')"></p>
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OZHKJFLdLs4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        <br>
+
+        <h3>傲慢ボーイはきっと死ぬ</h3>
+        <p><img src="imgs/gomanboy_logo.png" width="512"height="288"></p
+        <p>＜担当＞監督・脚本・演出</p>
+        <p>＜開演日＞2017年11月24日,25日</p>
+        <p>＜企画概要＞</p>
+        <p><input type="button" value="躰平楽オフィシャルサイト" onClick="window.open('http://taiheiraku.online/')"></p>
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/S1TUMhhVU9c" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+       <p></p>
+      </div>
+      <!-- メインコンテンツここまで -->
+
     </div>
-    <!-- サイト下部コンテンツここから-->
+    <!-- コンテナここまで -->
 
-  </div>
-  <!-- コンテナここまで -->
+    <!-- フッターここから -->
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">© 2017 ShogoMatsusako</p>
+      </div>
+    </footer>
 
-  <!-- フッターここから -->
-  <div id="footer">
-    <p>© 2017 ShogoMatsusako</p>
-  </div>
-  <!-- フッターここまで-->
+    <!-- フッターここまで-->
 
-</body>
+  </body>
 </html>
