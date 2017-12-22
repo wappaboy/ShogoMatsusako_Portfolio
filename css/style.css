@@ -154,3 +154,124 @@ div#footerArea {
  padding: 12px 0 0 12px; /* ロゴ表示部分の上に余白12ピクセルを設定 */
  width: 980px; /* ヘッダーコンテンツ部分の横幅を設定 */
 }
+
+
+/*全サムネイルのコンテナー*/
+#thumbs {
+	 position: relative;
+	 max-width: 630px;
+	 margin:5px auto;
+	 z-index:85;
+}
+/*サムネイルのマウスオーバーでポインターを手のひら*/
+#thumbs label img {
+	 cursor: pointer;
+}
+/*ラジオボタンを非表示に*/
+#r1, #r2, #r3, #r4, #r5, #r6, #r7, #r8 {
+	 display: none;
+}
+/* 写真表示領域 */
+#stage {
+	position:fixed;
+        left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:-1000;
+}
+/*表示写真の初期配置（全部透明に）*/
+#photo1, #photo2, #photo3, #photo4, #photo5, #photo6{
+　	position:absolute;
+	max-width:1200px;
+	width:62%;
+	left:19%;
+	top:100px;
+	padding:5px 5px 10px 5px;
+	background:#fff;
+	margin-left:0;
+	opacity:0;
+	-webkit-transition: all 1s ease;
+　　　　-moz-transition: all 1s ease;
+    　　-o-transition: all 1s ease;
+　　    transition: all 1s ease;
+}
+#photo1 img, #photo2 img, #photo3 img, #photo4 img, #photo5 img, #photo6 img{
+	max-width:1200px;
+	width: 100%;
+	height: auto;
+}
+/* 写真の表題・閉じるボタン */
+.span_l { float:left; margin:5px 0 0 5px; }
+.span_r { float:right; font-weight:bold;  margin:5px 10px 0 0; cursor:pointer;}
+/*写真表示時の画面遮蔽スクリーン*/
+#darkscreen {
+　	position:fixed;
+	position:absolute;
+　　　　width:100%;
+	height:100%;
+	top:0;
+	left:0;
+　　	background:#000;
+	opacity:0;
+	z-index:-5;
+}
+/*ボタン領域の設定*/
+.cover_left, .cover_right {
+	position:absolute;
+	top:0;
+	width:40%;
+	height:93%;
+	cursor:pointer;
+	z-index:1000;
+}
+.cover_left {
+	left:0;
+}
+.cover_right {
+	left:60%;
+}
+/* ボタン領域の最上面を非表示に */
+#photo6 label .cover_left,#photo6 label .cover_right {
+	display:none;
+}
+/*ボタン領域内のボタン文字（＜、＞）の設定*/
+.cover_left span, .cover_right span {
+	position: absolute;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	opacity:0;
+	top: 45%;
+}
+.cover_left span {
+	left: 5%;
+}
+.cover_right span {
+　	left: 85%
+}
+/*ボタン領域hover時文字の設定*/
+.cover_right:hover > span, .cover_left:hover > span {
+　	opacity:1;
+　	color:#EEE;
+}
+/* サムネイル、送りボタンチェックで#stageを表示 */
+#r1:checked ~ #stage,#r2:checked ~ #stage,#r3:checked ~ #stage,#r4:checked ~ #stage,#r5:checked ~ #stage {
+	z-index:100;
+	opacity:1;
+}
+/* サムネイル、送りボタンチェックで#darkscreenを表示 */
+#r1:checked ~ label #darkscreen, #r2:checked ~ label #darkscreen, #r3:checked ~ label #darkscreen, #r4:checked ~ label #darkscreen, #r5:checked ~ label #darkscreen, #r6:checked ~ label #darkscreen {
+　　　 opacity:0.6;
+　　　 z-index:90;
+}
+/* 各サムネイルがチェックされた時の#photo の表示 */
+#r1:checked ~ #stage #photo1,#r2:checked ~ #stage #photo2,#r3:checked ~ #stage #photo3,#r4:checked ~ #stage #photo4,#r5:checked ~ #stage #photo5, #r6:checked ~ #stage #photo6 {
+　　　opacity:1;
+　　　display:block;
+　　　z-index:101;
+}
+/* 各サムネイルがチェックされた時の#photo6のボタン領域を表示 */
+#r1:checked ~ #stage #photo6 label .cover_left,#r1:checked ~ #stage #photo6 label .cover_right,#r2:checked ~ #stage #photo6 label .cover_left,#r2:checked ~ #stage #photo6 label .cover_right,#r3:checked ~ #stage #photo6 label .cover_left,#r3:checked ~ #stage #photo6 label .cover_right,#r4:checked ~ #stage #photo6 label .cover_left,#r4:checked ~ #stage #photo6 label .cover_right,#r5:checked ~ #stage #photo6 label .cover_left,#r5:checked ~ #stage #photo6 label .cover_right, #r6:checked ~ #stage #photo6 label .cover_left,#r6:checked ~ #stage #photo6 label .cover_right {
+	display:block;
+}
