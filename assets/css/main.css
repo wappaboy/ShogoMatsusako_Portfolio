@@ -4201,4 +4201,23 @@
 			}
 
 	}
+
+/* 画像レスポンシブ */
+
+	#kyokugen {
+		max-width: 368px;
+		max-height: 516px;
+	}
+	#f3 {
+		max-width: 576px;
+		max-height: 360px;
+	}
+	.resizeimage img{
+		width: 100%;
+	}
+	.resizeiframe iframe{
+		max-width: 560px;
+		height: 315px;
+		width: 100%;
+	}
 	
