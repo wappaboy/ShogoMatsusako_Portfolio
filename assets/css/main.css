@@ -4208,8 +4208,25 @@
 		max-width: 368px;
 		max-height: 516px;
 	}
-	#f3 {
+	#title {
 		max-width: 576px;
+		max-height: 360px;
+	}
+	#gomanboy{
+		max-height: 360px;
+	}
+	#gomanboy03{
+		max-height: 360px;
+		max-width: 572px;
+	}
+	#gomanboy11{
+		max-height: 747px;
+		max-width: 534px;
+	}
+	#ashiyu{
+		max-height: 360px;
+	}
+	#nogihello{
 		max-height: 360px;
 	}
 	.resizeimage img{
