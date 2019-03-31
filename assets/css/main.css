@@ -4229,6 +4229,10 @@
 	#nogihello{
 		max-height: 360px;
 	}
+	#com{
+		max-height: 747px;
+		max-width: 534px;
+	}
 	.resizeimage img{
 		width: 100%;
 	}
